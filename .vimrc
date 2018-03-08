@@ -165,3 +165,9 @@ function! WatchForChanges(bufname, ...)
   echo msg
   let @"=reg_saved
 endfunction
+
+" added by vvanouytsel
+syntax on " enables syntax color
+au BufRead,BufNewFile *.scxml setfiletype xml     " set scxml to xml filetype for higlighting
+set hlsearch " enables hlsearch
+
